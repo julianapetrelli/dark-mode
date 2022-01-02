@@ -1,0 +1,106 @@
+/* fonte utilizada no projeto: Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+/* Propriedades Customizadas */
+:root {
+    --backgroun-color: rgb(243, 244, 253);
+    --title: #444750;
+    --text-content: #7e818a;
+    --text-navbar: #646464;
+    --button-color: #503dae;
+    --button-hover: #372591;
+    --background-image: url("/assets/img/background-light.png");
+}
+
+/* Propriedades Customizadas para o dark mode */
+.dark-mode:root {
+    --backgroun-color: #080320;
+    --title: rgb(226, 220, 220);
+    --text-content: rgb(182, 182, 182);
+    --text-navbar: rgb(228, 227, 227);
+    --button-color: #af2c61;
+    --button-hover: #991f50;
+    --background-image: url("/assets/img/background-dark.png");
+}
+
+/* Cor da seleção do texto */
+::selection {
+    background: #f20a87;
+    color: #fff;
+}
+
+body {
+    background-color: var(--backgroun-color);
+    background-image: var(--background-image);
+}
+
+.navbar {
+    position: absolute;
+}
+
+.navbar ul{
+    display: flex;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 1.2rem;
+    gap: 4rem;
+    padding: 40px 150px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: var(--text-navbar);
+}
+
+.background-image {
+    left: 50%;
+    top: 0;
+    position: absolute;
+}
+
+.background-image img {
+    max-height: 900px;
+}
+
+.text-content {
+    width: 30vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    padding: 0 150px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.text-content h1 {
+    font-size: 3.5rem;
+    color: var(--title);
+    margin: 0;
+    line-height: 4.2rem;
+}
+
+.text-content p{
+    padding: 20px 0px;
+    font-size: 1.1rem;
+    color: var(--text-content);
+    font-weight: 300;
+}
+
+.button {
+    padding: 10px 0px;
+}
+
+.button a {
+    text-decoration: none;
+    background-color: var(--button-color);
+    padding: 12px 30px;
+    border-radius: 30px;
+    color: #fff;
+    font-weight: 300;
+}
+
+.button a:hover {
+    background-color: var(--button-hover);
+}
