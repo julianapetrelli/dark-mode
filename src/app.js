@@ -13,7 +13,7 @@ export default function prefersTheme () {
         // Prevenindo a ação padrão do botão
         event.preventDefault();
 
-        // Adicionando a classe "dark-mode" ao botão, quando clicado e removendo ao clicar novamente
+        // Adicionando a classe "dark-mode" ao meu html, quando clicado e removendo ao clicar novamente
         html.classList.toggle('dark-mode');
     }
 
